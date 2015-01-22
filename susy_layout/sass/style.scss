@@ -1,0 +1,24 @@
+// Screen
+// ======
+
+@import "helpers/variables";
+@import "helpers/mixins";
+
+//base components
+@import "base/reset";
+@import "base/typography";
+
+@import "grids";
+@import "breakpoints";
+@import "layouts/header";
+@import "layouts/content";
+@import "layouts/footer";
+
+@import "components/forms";
+@import "components/navigation";
+@import "components/search";
+@import "components/disease-categories";
+@import "components/tabs";
+@import "components/participation-benefits";
+@import "components/faqs";
+

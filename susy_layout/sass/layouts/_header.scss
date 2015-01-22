@@ -1,0 +1,156 @@
+header.branding {
+  @include container;
+  
+  section.usc {
+    background: #000;
+    padding: 10px 0px;
+    position: relative;
+    height: 65px;
+
+    img#keck-medicine-logo {
+      float: left;
+      height: 18px;
+      margin-top: 12px;
+    }
+
+    img#usc-logo {
+      margin-left: 575px;
+    }
+ }
+
+  section.usc:before, section.usc:after {
+    content: "";
+    position: absolute;
+    background: #000;  /* Match the background */
+    top: 0;
+    bottom: 0;
+    width: 9999px;   /* some huge width */
+  }
+
+  section.usc:before {
+    right: 100%; 
+  }
+
+  section.usc:after {
+    left: 100%;
+  }
+
+  section.scctsi {
+
+    background: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    height: 95px;
+    position: relative;
+
+    span.beta-label {
+      text-transform: uppercase;
+      font-size: 14px;
+      vertical-align: super;
+      margin-left: 10px;
+    }
+
+    h1 {
+      
+      padding: 15px 0px 5px 0px;
+      font-size: 27px;
+      color: #990000;
+      letter-spacing: 1px;
+      font-weight: normal;
+      font-family: "Georgia", serif;
+
+      a {
+        color: #990000;
+      }
+
+      a:hover {
+        border-bottom: none;
+      }
+
+      @include breakpoint($mobile-breakpoint) {
+        @include span(2);
+      }
+      @include breakpoint($tablet-breakpoint) {
+        @include span(6);
+      }
+
+    }
+
+    h2 {
+      padding: 5px 0px 25px 0px;
+      color: #000;
+      font-size: 16px;
+      float: left;
+      font-family: "Open Sans", Arial, serif;
+
+      @include breakpoint($mobile-breakpoint) {
+        @include span(2);
+      }
+      @include breakpoint($tablet-breakpoint) {
+        @include span(6);
+      }
+      
+    }
+
+    img {
+      float: right;
+    }
+
+    ul.languages {
+      float: right;
+      position: relative;
+      top: 15px;
+
+      li.active {
+        font-weight: 700;
+
+        a {
+          color: #666;
+        }
+      }
+
+      li:last-child {
+        margin-right: 0;
+        padding-right: 0;
+      }
+
+      @include horizontal-list(15px, 15px, 1px solid #999);
+
+    }
+
+    .phone {
+      color: #000;
+      font-size: 16px;
+      float: right;
+      position: relative;
+      top: -25px;
+      left: 170px;
+
+      mark {
+        color: #990000;
+        font-weight: 700;
+        background: none;
+      }
+
+    }
+  }
+
+  section.scctsi:before, section.scctsi:after {
+    content: "";
+    position: absolute;
+    background: #fff;  /* Match the background */
+    top: 0;
+    bottom: 0;
+    width: 9999px;   /* some huge width */
+  }
+
+  section.scctsi:before {
+    right: 100%; 
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  section.scctsi:after {
+    left: 100%;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+

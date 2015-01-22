@@ -1,0 +1,23 @@
+section#criteria-view-tab-container, section#sites-view-tab-container {
+  ul {
+    li, li.active {
+      a {
+        font-weight: normal;
+        color: #267196;
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 3px solid #C4D8E2;
+      }
+      a.active {
+        color: #267196;
+        font-weight: normal;
+        border-bottom: 3px solid #267196;
+      }
+    }
+  }
+}
+
+section#tabs-inclusion-criteria, section#tabs-exclusion-criteria, section#tabs-sites-list-view, section#tabs-sites-map-view {
+    margin-top: 10px;
+  }

@@ -1,0 +1,7 @@
+section.content {
+  width: $page-width;
+  margin: 0 auto;
+  background: #fff; 
+  @include clearfix;
+}
+

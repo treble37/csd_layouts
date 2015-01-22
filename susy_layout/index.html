@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Clinical Studies Directory</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="stylesheets/wfmi-style.css" rel="stylesheet"> 
+
+    <script src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class='browsehappy'>
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header class="branding">
+      <section class="usc">
+        <a href="http://www.keckmedicine.org/">
+          <img alt="Keck Medicine Logo" id="keck-medicine-logo" src="/assets/keck-medicine-logo.png">
+        </a>
+        <img alt="USC Logo" id="usc-logo" src="/assets/gateway-usc-shield-name.png">
+      </section>
+      <section class="scctsi">
+        <h1><a href="/">Clinical Trials and Studies</a></h1>
+        <h2>Your participation matters. Help us discover and cure!</h2>
+        <ul class="languages">
+          <li class="active">
+            <a href="#">English</a>
+          </li>
+          <li>
+            <a href="#">Español</a>
+          </li>
+          <li>
+            <a href="#">漢語</a>
+          </li>
+        </ul>
+        <p class="phone">
+          Contact us at
+          <mark>(800) USC-CARE (800-872-2273)</mark>
+        </p>
+      </section>
+    </header>
+    <section class="content">
+      <section class="search">
+        <section class="search-box">
+          <header>
+            <p id="clinical_trials_recruiting_count_display" style="display: block;">Keck Medicine of USC is currently accepting patients for 0 clinical trials.</p>
+            <p id="clinical_trials_total_count_display" style="display: none;">Keck Medicine of USC is currently running 103 clinical trials.</p>
+          </header>
+        </section>
+        <section class="search-tool">
+          <form accept-charset="UTF-8" action="/location_search" class="navbar-form navbar-left" id="search-form" method="get"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+              <section class="input-wrapper">
+                <label for="keyword">Keyword</label>
+                <input id="search_terms" name="search_terms" placeholder="e.g., Lung cancer, aspirin, Thomas Buchanan" type="text" class="ui-autocomplete-input" autocomplete="off">
+              </section>
+              <section class="input-wrapper">
+                <label for="zipcode">Near You</label>
+                <input id="zip_code" name="zip_code" placeholder="90033" type="text">
+              </section>
+              <button id="search_icon" name="button" type="submit"><i class="fa fa-search"></i>
+              Search
+              </button>
+              <section class="currently-accepting">
+                <input checked="checked" id="currently-accepting-patients" name="currently-accepting-patients" type="checkbox" value="Recruiting">
+                <label for="currently-accepting-patients"><span class="ui"></span>Only show trials currently accepting patients
+                </label>
+              </section>
+          </form>
+        </section>
+      </section>
+      <section id="tab-container" data-easytabs="true" style="">
+        <ul>
+          <li class="active">
+            <a href="#tabs-participation" class="active">
+              Your Participation Matters: Why and How
+            </a>
+          </li>
+          <li class="">
+            <a href="#tabs-clinical-trials" class="">
+              View Clinical Trials by Category
+            </a>
+          </li>
+        </ul>
+        <section id="tabs-participation" class="active" style="display: block;">
+          <section id="tabs-participation">
+            <!-- START tabs-participation -->
+            <section class="participation-benefits">
+              <h2>Why Participate?</h2>
+              <ul>
+                <li>
+                  <div>
+                    <i class="icon-i-social-services"></i>
+                  </div>
+                  <h3>Early Access to Research</h3>
+                  <p>For participants with advanced disease, clinical trials offer some of the most aggressive options towards treatment.</p>
+                </li>
+                <li>
+                  <div>
+                    <i class="icon-i-administration"></i>
+                  </div>
+                  <h3>Close Monitoring</h3>
+                  <p>Because clinical trials are experimental, the participant is closely observed, both by the physician and a research nurse. Each trial has a "protocol" that specifies how and when participants are seen, given their medication and monitored with blood and other diagnostic tests.</p>
+                </li>
+                <li>
+                  <div>
+                    <i class="icon-i-health-education"></i>
+                  </div>
+                  <h3>Advancing Medicine</h3>
+                  <p>Although the main motivation to enter a clinical trial is the possibility of obtaining the best treatment research, participants are also advancing the war on cancer and other diseases.</p>
+                </li>
+                <li>
+                  <section class="appointment-widget">
+                    <ul>
+                      <li class="request-online"><a href="http://www.keckmedicine.org/request-an-appointment">Request an appointment <mark>online</mark></a></li>
+                      <script type="text/javascript" src="https://widget.fonolo.com/main/load/f5edf466fbc7633501c289205104e341"></script>
+                      <li class="request-call"><a class="fonolo_trigger">Let us call <mark>you</mark> <br>at your convenience</a></li>
+                      <li class="call-information">Or call <mark>(800) USC-CARE</mark><br/>(800-872-2273)</li>
+                    </ul>
+                  </section>
+                </li>
+              </ul>
+            </section>
+            <section id="faq-list">
+              <h2>Frequently Asked Questions</h2>
+              <h3 class="">
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                What is the difference between a clinical trial and and clinical study?
+              </h3>
+              <div class="answer" style="display: none;">
+                <p>Clinical Study refers to research conducted with a person or group with an aim to investigate certain behaviors or physical characteristics (e.g. taking blood or tissue samples or observing certain behavior in a natural or a lab setting).</p>
+                <p>Clinical Trials are a sub-category of Clinical Research/Study in which a specific plan of action (called a Protocol) is being used to test a drug, device, or a procedure/treatment with an intent to improve patient care and increase treatment success. This can also assist pharmaceutical companies with FDA approval of their drug, device, or procedure/treatment.</p>
+              </div>
+              <h3 class="">
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                What are the types of clinical trials?
+              </h3>
+              <div class="answer" style="display: none;">
+                <p>The majority of clinical trials are "therapeutic" — offering new treatments to those who have advanced diseases such as multiple sclerosis or heart disease. Some are "adjuvant", such as those testing hormones to prevent recurrence of breast cancer. "Prevention" trials test agents that may help reduce the likelihood of developing diseases for those at high risk. In “translational” trials researchers examine a patient's own genes to determine what genetic makeup responds best to particular treatments.</p>
+              </div>
+              <h3 class="">
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                How are clinical trials monitored?
+              </h3>
+              <div class="answer" style="display: none;">
+                <p>Clinical trials are rigorously regulated. As with any new medication or surgical procedure, treatments are first studied thoroughly in the laboratory. Many represent simply a new approach, such as dosing or schedule changes, or addition to existing standard treatments, such as a medication that may enhance the effectiveness of a standard drug or reduce a toxic side effect. If basic research establishes that a new method or chemical seems likely to succeed safely and effectively in patients, it can be submitted for approval for a clinical trial.</p>
+                <p>Not only must the submission meet regulatory guidelines established by organizations such as the National Cancer Institute (NCI) and the Food and Drug Administration, but it must be first reviewed for scientific merit by the Hospital Clinical Investigations Committees. It is then submitted to the USC Health Sciences Institutional Review Board (IRB), a panel of 36 scientists, researchers and others in the community who additionally approve the proposal for safety and ethical issues.</p>
+                <p>Aside from reviewing the science and safety and efficacy, the IRB gives serious consideration to the proposed trial's "informed consent" — the document that physicians will give to patients explaining the trial and its potential risks.</p>
+                <p>Once approved, clinical trials are monitored through the hospitals’ Clinical Investigations Support Offices, where research nurses follow patients closely and where data managers track their progress.</p>
+              </div>
+              <h3 class="">
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                What is research?
+              </h3>
+              <div class="answer" style="display: none;">
+                <p>Research is the collecting and analyzing of data that is done to answer a question. Some other words for research are clinical trial, protocol, survey, or experiment.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                What is a human subject?
+              </h3>
+              <div class="answer">
+                <p>A subject is someone who volunteers to participate in research.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Who can be a subject in a research study?
+              </h3>
+              <div class="answer">
+                <p>Most research studies have certain requirements that must be met in order for a subject to participate. These requirements are designed to ensure the safety of the subjects and the usefulness of the research. Some studies have broad requirements such as being over 18. Other studies have a more focused requirement such as having a certain disease.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Do I have to participate?
+              </h3>
+              <div class="answer">
+                <p>NO! Participating in a research study is voluntary. A participant can drop out of a study at any time. Refusing to participate in a study will not result in a penalty or loss of any benefits to which you are entitled.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Are there risks to being in a research study?
+              </h3>
+              <div class="answer">
+                <p>Research may involve different types of risk. A study that asks you to fill out a survey has only minor risks, such as questions that may make you uneasy. For other studies, such as taking an experimental drug, the risks can be much greater (e.g. having a bad reaction to the drug). The research team is required to explain to you the foreseeable risks of being in the study before you decide whether or not to participate.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Are there benefits to being in a research study?
+              </h3>
+              <div class="answer">
+                <p>Not everyone who participates in a research study will benefit personally. Sometimes, your participation in the research study will be of benefit to society by helping researchers to learn more about a certain disease or condition. In some studies, however, you may personally benefit from medication that aids in your recovery or from any needed counseling.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Who leads a research study?
+              </h3>
+              <div class="answer">
+                <p>The Principal Investigator (PI) leads the research study. The PI is responsible for the overall conduct of the research study. The PI is also responsible for assuring the safety of the participants. PIs are often faculty, physicians, or students.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Who else is involved in research studies?
+              </h3>
+              <div class="answer">
+                <p>Principal Investigators often rely on a research team to assist them in their study. The research team can be made up of research assistants, research nurses, data coordinators, statisticians, and other people with special skills needed for the study.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Who reviews a study?
+              </h3>
+              <div class="answer">
+                <p>At the University of Southern California, all studies that involve human subjects are reviewed by an Institutional Review Board (IRB) before they are allowed to begin.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                What is an IRB?
+              </h3>
+              <div class="answer">
+                <p>An IRB is a committee of scientists and non-scientists who review projects submitted by researchers. The University of Southern California has four IRBs; one on the University Park Campus, and three on the Health Sciences Campus. The IRB’s purpose is to protect the rights and welfare of the research subjects in a study.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Who will see my records?
+              </h3>
+              <div class="answer">
+                <p>Like your medical record, the information in your research record will be confidential. Information will be given only to the researchers who carry out the study or to those who make sure the study is safe and carried out the way it was planned.</p>
+              </div>
+              <h3 class="open">
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Are there any special rules to help protect certain subjects?
+              </h3>
+              <div class="answer" style="display: block;">
+                <p>Children, pregnant women and prisoners can all be participants in research studies, but are considered potentially "vulnerable populations". There are special rules to protect participants who fall into one of these groups.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                What kinds of procedures are involved?
+              </h3>
+              <div class="answer">
+                <p>Research studies can involve a wide variety of procedures, ranging from filling out surveys and questionnaires to taking experimental medicines or using experimental devices. Some research studies last only a few minutes, while others last for several years. The research team will describe to you all of the procedures that you will be asked to undergo before you agree to be in the study.</p>
+              </div>
+              <h3>
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                What is informed consent?
+              </h3>
+              <div class="answer">
+                <p>Informed consent is the process of learning the key facts about a research study before you decide whether or not to volunteer. Your agreement to volunteer should be based upon a clear understanding of what will take place in the study and how it might affect you. The consent process begins when the research staff explains the facts about the research study to you. The research staff will assist you with the “informed consent form” that goes over these facts so you can decide whether or not you want to take part in the study. These facts include details about the study, tests, or procedures you may receive, the benefits and risks that could result, alternatives available should you decided not to participate, and your rights as a research volunteer.</p>
+              </div>
+              <h3 class="">
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                What questions should I ask before I agree to take part in a research study?
+              </h3>
+              <div class="answer" style="display: none;">
+                <p>Before you decide to volunteer for a research study, you need to know as much as possible about it. If there are any issues that concern you, be sure to ask questions. The following is a list of important questions. Not every question applies to every study, but you have every right for answers to all you ask.</p>
+                <ul>
+                  <li>Will I benefit from this study?</li>
+                  <li>Who is doing this study and what question might it answer?</li>
+                  <li>Will this research help me to understand my condition? If so, how?</li>
+                  <li>Will I miss out on any “normal care” by participating in this study?</li>
+                  <li>What tests or procedures will be done?</li>
+                  <li>What alternatives are available if I decide not to participate in the study?</li>
+                  <li>Is it possible that I will receive only a placebo (inactive substance)?</li>
+                  <li>What could happen to me, good or bad, if I take part in the study?</li>
+                  <li>How long will the study last?</li>
+                  <li>What will happen to specimens I give?</li>
+                  <li>Who has reviewed/approved this study?</li>
+                  <li>If I have a condition, could it get worse during the study?</li>
+                  <li>Will I be charged anything or paid anything to be in this study?</li>
+                  <li>If I decide to participate in this study, how will it affect my daily life?</li>
+                  <li>What will happen to me at the end of the study?</li>
+                  <li>Will I be told the results of the study?</li>
+                  <li>Who will find out that I am taking part in this study?</li>
+                  <li>How do I end my participation in this study if I change my mind?</li>
+                  <li>Whom do I contact for questions and information about the study?</li>
+                  <li>What risks are involved in this study?</li>
+                </ul>
+              </div>
+              <h3 class="">
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Where can I find reliable health and research information?
+              </h3>
+              <div class="answer" style="display: none;">
+                <ul class="no-bullets">
+                  <li>
+                    USC Human Subjects Information Provides links to research and health info for subjects.
+                    <br>
+                    <a href="http://oprs.usc.edu/about/participating/">http://oprs.usc.edu/about/participating/</a>
+                  </li>
+                  <li>
+                    American Heart Association
+                    <br>
+                    Features an online heart and stroke encyclopedia.
+                    <br>
+                    <a href="www.americanheart.org">www.americanheart.org</a>
+                  </li>
+                  <li>
+                    ClinicalTrials.Gov
+                    <br>
+                    Provides info about federally and privately supported clinical research.
+                    <br>
+                    <a href="www.clinicaltrials.gov">www.clinicaltrials.gov</a>
+                  </li>
+                  <li>
+                    Family Doctor
+                    <br>
+                    Health info from the American Academy of Family Physicians.
+                    <br>
+                    <a href="www.familydoctor.org">www.familydoctor.org</a>
+                  </li>
+                  <li>
+                    Healthfinder
+                    <br>
+                    A health library available in English and Spanish.
+                    <br>
+                    <a href="www.healthfinder.gov">www.healthfinder.gov</a>
+                  </li>
+                  <li>
+                    Medem
+                    <br>
+                    A partnership among medical societies to foster doctor patient-communications; includes an online medical library.
+                    <br>
+                    <a href="www.medem.com">www.medem.com</a>
+                  </li>
+                  <li>
+                    Medline Plus
+                    <br>
+                    The National Library of Medicine’s complete health info portal.
+                    <br>
+                    <a href="http://medlineplus.gov">http://medlineplus.gov</a>
+                  </li>
+                  <li>
+                    National Cancer Institute
+                    <br>
+                    Provides clinical details about every type of cancer and the latest treatments.
+                    <br>
+                    <a href="www.medem.com">www.cancer.gov</a>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="open">
+                <i class="fa fa-plus-square"></i>
+                <i class="fa fa-minus-square"></i>
+                Whom at USC do I contact for human subjects research info, or to voice a concern or complaint?
+              </h3>
+              <div class="answer" style="display: block;">
+                <ul class="no-bullets">
+                  <li>
+                    USC Complaints, Concerns, or Reports of Violations Website
+                    <br>
+                    This website provides info on how to report a complaint, concern, or violation (anonymously if you prefer). You can also contact the offices listed below.
+                    <br>
+                    <a href="http://oprs.usc.edu/about/complaints/">http://oprs.usc.edu/about/complaints/</a>
+                  </li>
+                  <li>
+                    Office for the Protection of Research Subjects (OPRS)
+                    <br>
+                    Susan L. Rose, Ph.D., Executive Director
+                    <br>
+                    3720 South Flower Street 325
+                    <br>
+                    Los Angeles, CA 90089-0706
+                    <br>
+                    Tel: (213)-821-1154 Fax: (213)-740-9299
+                    <br>
+                    E-mail:
+                    <a href="mailto:oprs@usc.edu">oprs@usc.edu</a>
+                    <br>
+                    <a href="http://oprs.usc.edu/">http://oprs.usc.edu/</a>
+                  </li>
+                  <li>
+                    Health Sciences
+                    <br>
+                    Institutional Review Board
+                    <br>
+                    Darcy Spicer, M.D., Chair
+                    <br>
+                    Sandra Jean, CIP, IRB Director
+                    <br>
+                    General Hospital, Suite 4700
+                    <br>
+                    1200 North State Street Los Angeles, CA 90033
+                    <br>
+                    Tel: (323)-223-2340 Fax: (323)-224-8389
+                    <br>
+                    E-mail:
+                    <a href="mailto:irb@usc.edu">irb@usc.edu</a>
+                    <br>
+                    <a href="http://oprs.usc.edu/hsirb/">http://oprs.usc.edu/hsirb/</a>
+                  </li>
+                  <li>
+                    University Park
+                    <br>
+                    Institutional Review Board
+                    <br>
+                    Richard John, Ph.D., Chair
+                    <br>
+                    Kristin J. Craun, MPH, CIP, Director
+                    <br>
+                    Credit Union Building (CUB), Suite 301
+                    <br>
+                    3720 S. Flower Street
+                    <br>
+                    Los Angeles, CA 90089
+                    <br>
+                    Tel: (213)-821-5272 Fax: (213)-821-5276
+                    <br>
+                    E-mail:
+                    <a href="mailto:upirb@usc.edu">upirb@usc.edu</a>
+                    <br>
+                    <a href="http://oprs.usc.edu/upirb/">http://oprs.usc.edu/upirb/</a>
+                  </li>
+                  <li>
+                    For copies of the “Should I participate in research” brochure, contact
+                    <a href="mailto:oprs@usc.edu">oprs@usc.edu</a>
+                  </li>
+                  <li>Adapted from the Department of Veterans Affairs’ Office of Research Compliance  Assurance "I'm a veteran. Should I participate in research?", and the University of Iowa Human Subjects Office "So you’re thinking about being in a research study."</li>
+                </ul>
+              </div>
+            </section>
+          </section>
+          <!-- END tabs-participation -->
+        </section>
+        <section id="tabs-clinical-trials" style="display: none; position: static; visibility: visible;" class="">
+          <section class="disease-categories">
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-oncology"></i>
+                <h2>Cancer Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Acute+Lymphoid+leukemia+%28ALL%29">Acute Lymphoid leukemia (ALL) (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Bone+Cancer">Bone Cancer (3)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Brain+Cancer">Brain Cancer (4)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Breast+Cancer">Breast Cancer (8)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Chronic+Myelogenous+Leukemia+%28CML%29">Chronic Myelogenous Leukemia (CML) (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Gynecologic+Cancers">Gynecologic Cancers (4)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Head+and+Neck+Cancers">Head and Neck Cancers (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Leukemia">Leukemia (4)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Lung+Cancer">Lung Cancer (4)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Myelodysplastic+Syndromes+%28MDS%29">Myelodysplastic Syndromes (MDS) (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Neuroendocrine+Tumors">Neuroendocrine Tumors (7)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Prostate+Cancer">Prostate Cancer (3)</a>
+                </li>
+              </ul>
+            </section>
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-cardiology"></i>
+                <h2>Cardiovascular Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Aneurysm">Aneurysm (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Aortic+Disease">Aortic Disease (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Aortic+Stenosis">Aortic Stenosis (3)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Arrhythmias">Arrhythmias (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Atherosclerosis">Atherosclerosis (2)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Heart+Attack">Heart Attack (2)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=High+Blood+Pressure+%2F+Hypertension">High Blood Pressure / Hypertension (3)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Renal+Vascular+Disease">Renal Vascular Disease (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Stroke">Stroke (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Thrombosis">Thrombosis (3)</a>
+                </li>
+              </ul>
+            </section>
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-genetics"></i>
+                <h2>Genetic Disease Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Cystic+Fibrosis">Cystic Fibrosis (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Polycystic+Kidney+Disease">Polycystic Kidney Disease (1)</a>
+                </li>
+              </ul>
+            </section>
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-interpreter-services"></i>
+                <h2>Infectious Disease Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=AIDS+%2F+HIV">AIDS / HIV (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Hepatitis+C">Hepatitis C (1)</a>
+                </li>
+              </ul>
+            </section>
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-neurology"></i>
+                <h2>Neurosciences Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Alzheimer%27s+Disease">Alzheimer's Disease (4)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Aneurysm">Aneurysm (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Brain+Cancer">Brain Cancer (4)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Dementia">Dementia (4)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Multiple+Sclerosis">Multiple Sclerosis (2)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Myasthenia+Gravis">Myasthenia Gravis (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Neuralgia">Neuralgia (3)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Neuroendocrine+Tumors">Neuroendocrine Tumors (7)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Parkinson%27s+Disease">Parkinson's Disease (4)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Sleep+Apnea">Sleep Apnea (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Stroke">Stroke (1)</a>
+                </li>
+              </ul>
+            </section>
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-ophthalmology"></i>
+                <h2>Ophthalmology Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Glaucoma">Glaucoma (2)</a>
+                </li>
+              </ul>
+            </section>
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-outpatient"></i>
+                <h2>Orthopaedics Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Arthritis">Arthritis (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Rheumatic+Diseases">Rheumatic Diseases (3)</a>
+                </li>
+              </ul>
+            </section>
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-pediatrics"></i>
+                <h2>Pediatric Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Neonatal+and+Developmental+Medicine">Neonatal and Developmental Medicine (1)</a>
+                </li>
+              </ul>
+            </section>
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-surgery"></i>
+                <h2>Surgery Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Chronic+Liver+Disease+%2F+Cirrhosis">Chronic Liver Disease / Cirrhosis (1)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Diabetes">Diabetes (2)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Glaucoma">Glaucoma (2)</a>
+                </li>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Hemostatics">Hemostatics (2)</a>
+                </li>
+              </ul>
+            </section>
+            <section class="disease-category">
+              <header>
+                <i class="icon-i-kidney"></i>
+                <h2>Transplantation Trials</h2>
+              </header>
+              <ul>
+                <li>
+                  <a href="/currentclinicaltrials?layman_terms%5B%5D=Hepatitis+C">Hepatitis C (1)</a>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </section>
+      <script>
+        (function() {
+          var spinnerInit;
+        
+          spinnerInit = function() {
+            var opts;
+            opts = {
+              lines: 13,
+              length: 20,
+              width: 10,
+              radius: 18,
+              corners: 1,
+              rotate: 52,
+              direction: 1,
+              color: "#000",
+              speed: 1.3,
+              trail: 63,
+              shadow: false,
+              hwaccel: false,
+              className: "spinner",
+              zIndex: 2e9,
+              top: "50%",
+              left: "50%"
+            };
+            $("#search_icon").after(new Spinner(opts).spin().el);
+          };
+        
+          $('#search_icon').click(function() {
+            $.blockUI({
+              message: null
+            });
+            return spinnerInit();
+          });
+        
+        }).call(this);
+      </script>
+    </section>
+    
+    <section class="powered-by-sc-ctsi"><img src="/assets/sc-ctsi-logo.png">Powered by
+      <a href="http://www.sc-ctsi.org" target="_blank">SC CTSI</a>
+    </section>
+    <footer>
+      <section>
+        <a href="http://www.keckmedicine.org/">
+          <img alt="Keck Medicine Logo" src="/assets/keck-medicine-logo-footer.png">
+        </a>
+        <p>
+          Advanced technology, innovative medicine and compassionate care.
+          <br>
+          <a href="http://www.keckmedicine.org">Visit us</a>
+          to learn more
+        </p>
+      </section>
+      <section>
+        <ul>
+          <li>© 2014 Keck Medicine of USC</li>
+          <li>
+            <a href="http://www.keckmedicine.org/privacy-policy/">Privacy Policy</a>
+            <a></a>
+          </li>
+          <li>
+            <a href="http://www.keckmedicine.org/keck-medicine-web-services/">Keck Medicine Web Services</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span></body>
+</html>

@@ -1,0 +1,139 @@
+section.powered-by-sc-ctsi {
+  margin: 0 auto;
+  width: $page-width;
+  border-right: none;
+  color: #000;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-left: 795px;
+
+  img {
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+    margin-top: -3px;
+    float: left;
+  }
+}
+
+footer {
+  width: $page-width;
+  margin: 0 auto;
+  background: #eee;
+  color: #666;
+  font-size: 15px;
+  @include clearfix;
+
+  a {
+    color: #333;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  ul li {
+    margin-bottom: 5px;
+  }
+
+  section {
+    padding: 25px;
+    position: relative;
+
+    h4 {
+      font-size: 21px;
+      font-family: "Georgia", serif;
+      color: #747474;
+    }
+  }
+
+  section:first-child {
+    background: #c0c0c0;
+    padding: 15px 25px;
+
+    img {
+      float: left;
+      padding-right: 25px;
+      margin-right: 25px;
+      border-right: 1px solid #dadada;
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
+
+    p {
+      color: #787878;
+      font-size: 13px;
+      border-left: 1px solid a9a9a9;
+      line-height: 1.5em;
+    }
+
+    a {
+      font-weight: 700;
+      color: #747474;
+    }
+
+    a:hover {
+      color: #990000;
+    }
+  }
+
+  section:nth-child(2) {
+    padding: 15px 25px 10px 25px;
+    background: #a2a2a2;
+    color: #747474;
+
+    ul {
+      font-size: 12px;
+
+      @include horizontal-list(5px, 5px, 1px solid #787878);
+
+      a {
+        color: #ddd;
+      }
+
+      a:hover {
+        color: #990000;
+      }
+    }
+  }
+
+  section:before, section:after {
+    content: "";
+    position: absolute;
+    background: #000;  /* Match the background */
+    top: 0;
+    bottom: 0;
+    width: 9999px;   /* some huge width */
+  }
+
+  section:before {
+    right: 100%; 
+  }
+
+  section:after {
+    left: 100%;
+  }
+
+  section:first-child:before {
+    background: #c0c0c0;
+  }
+
+  section:first-child:after {
+    background: #c0c0c0;
+  }
+
+  section:nth-child(2):before {
+    background: #a2a2a2;
+  }
+
+  section:nth-child(2):after {
+    background: #a2a2a2;
+  }
+}

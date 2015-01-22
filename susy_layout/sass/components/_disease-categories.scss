@@ -1,0 +1,53 @@
+section.disease-categories {
+  background: #fff;
+  margin-top: 25px;
+  padding: 15px 30px;
+
+  @include clearfix;
+}
+
+section.disease-category {
+	color: #000;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  @include clearfix;
+
+  header {
+    border-left: 5px solid #990000;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #eee;
+
+    i {
+      color: #333;
+      float: left;
+      font-size: 28px;
+      margin-right: 10px;
+      text-shadow: 2px 2px 1px #ddd;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 400;
+      color: #333;
+      position: relative;
+      top: 5px;
+      padding: 0;
+    }
+
+    @include clearfix;
+  }
+
+  ul {
+    margin-left: 55px;
+
+    li {
+      float: left;
+      margin-right: 15px;
+      padding-right: 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+  }
+}
