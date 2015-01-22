@@ -136,14 +136,31 @@ header.branding section.scctsi {
   height: 95px;
   position: relative;
 }
-/* line 45, ../sass/layouts/_header.scss */
+@media (min-width: 320px) {
+  /* line 38, ../sass/layouts/_header.scss */
+  header.branding section.scctsi {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 38, ../sass/layouts/_header.scss */
+  header.branding section.scctsi {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 6.77966%;
+  }
+}
+/* line 54, ../sass/layouts/_header.scss */
 header.branding section.scctsi span.beta-label {
   text-transform: uppercase;
   font-size: 14px;
   vertical-align: super;
   margin-left: 10px;
 }
-/* line 52, ../sass/layouts/_header.scss */
+/* line 61, ../sass/layouts/_header.scss */
 header.branding section.scctsi h1 {
   padding: 15px 0px 5px 0px;
   font-size: 27px;
@@ -152,31 +169,15 @@ header.branding section.scctsi h1 {
   font-weight: normal;
   font-family: "Georgia", serif;
 }
-/* line 61, ../sass/layouts/_header.scss */
+/* line 70, ../sass/layouts/_header.scss */
 header.branding section.scctsi h1 a {
   color: #990000;
 }
-/* line 65, ../sass/layouts/_header.scss */
+/* line 74, ../sass/layouts/_header.scss */
 header.branding section.scctsi h1 a:hover {
   border-bottom: none;
 }
-@media (min-width: 320px) {
-  /* line 52, ../sass/layouts/_header.scss */
-  header.branding section.scctsi h1 {
-    width: 15.25424%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-}
-@media (min-width: 768px) {
-  /* line 52, ../sass/layouts/_header.scss */
-  header.branding section.scctsi h1 {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-}
-/* line 78, ../sass/layouts/_header.scss */
+/* line 80, ../sass/layouts/_header.scss */
 header.branding section.scctsi h2 {
   padding: 5px 0px 25px 0px;
   color: #000;
@@ -184,20 +185,10 @@ header.branding section.scctsi h2 {
   float: left;
   font-family: "Open Sans", Arial, serif;
 }
-@media (min-width: 320px) {
-  /* line 78, ../sass/layouts/_header.scss */
+@media (min-width: 0) and (max-width: 320px) {
+  /* line 80, ../sass/layouts/_header.scss */
   header.branding section.scctsi h2 {
-    width: 15.25424%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-}
-@media (min-width: 768px) {
-  /* line 78, ../sass/layouts/_header.scss */
-  header.branding section.scctsi h2 {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
+    display: none;
   }
 }
 /* line 94, ../sass/layouts/_header.scss */
@@ -248,7 +239,13 @@ header.branding section.scctsi ul.languages li {
 header.branding section.scctsi ul.languages li:last-child {
   border-right: none;
 }
-/* line 120, ../sass/layouts/_header.scss */
+@media (min-width: 0) and (max-width: 768px) {
+  /* line 98, ../sass/layouts/_header.scss */
+  header.branding section.scctsi ul.languages {
+    display: none;
+  }
+}
+/* line 123, ../sass/layouts/_header.scss */
 header.branding section.scctsi .phone {
   color: #000;
   font-size: 16px;
@@ -257,13 +254,19 @@ header.branding section.scctsi .phone {
   top: -25px;
   left: 170px;
 }
-/* line 128, ../sass/layouts/_header.scss */
+/* line 131, ../sass/layouts/_header.scss */
 header.branding section.scctsi .phone mark {
   color: #990000;
   font-weight: 700;
   background: none;
 }
-/* line 137, ../sass/layouts/_header.scss */
+@media (min-width: 0) and (max-width: 768px) {
+  /* line 123, ../sass/layouts/_header.scss */
+  header.branding section.scctsi .phone {
+    display: none;
+  }
+}
+/* line 142, ../sass/layouts/_header.scss */
 header.branding section.scctsi:before, header.branding section.scctsi:after {
   content: "";
   position: absolute;
@@ -274,12 +277,12 @@ header.branding section.scctsi:before, header.branding section.scctsi:after {
   width: 9999px;
   /* some huge width */
 }
-/* line 146, ../sass/layouts/_header.scss */
+/* line 151, ../sass/layouts/_header.scss */
 header.branding section.scctsi:before {
   right: 100%;
   border-bottom: 1px solid #e1e1e1;
 }
-/* line 151, ../sass/layouts/_header.scss */
+/* line 156, ../sass/layouts/_header.scss */
 header.branding section.scctsi:after {
   left: 100%;
   border-bottom: 1px solid #e1e1e1;

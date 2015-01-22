@@ -37,6 +37,15 @@ header.branding {
 
   section.scctsi {
 
+    @include breakpoint($mobile-breakpoint) {
+      @include span(2);
+    }
+
+    @include breakpoint($tablet-breakpoint) {
+      @include span(10);
+      margin-left: span(1);
+    }
+
     background: #fff;
     border-bottom: 1px solid #e1e1e1;
     height: 95px;
@@ -66,13 +75,6 @@ header.branding {
         border-bottom: none;
       }
 
-      @include breakpoint($mobile-breakpoint) {
-        @include span(2);
-      }
-      @include breakpoint($tablet-breakpoint) {
-        @include span(6);
-      }
-
     }
 
     h2 {
@@ -81,13 +83,11 @@ header.branding {
       font-size: 16px;
       float: left;
       font-family: "Open Sans", Arial, serif;
+    
+      @include breakpoint(0 $mobile-breakpoint) {
+        display: none;
+      }
 
-      @include breakpoint($mobile-breakpoint) {
-        @include span(2);
-      }
-      @include breakpoint($tablet-breakpoint) {
-        @include span(6);
-      }
       
     }
 
@@ -115,6 +115,9 @@ header.branding {
 
       @include horizontal-list(15px, 15px, 1px solid #999);
 
+      @include breakpoint(0 $tablet-breakpoint) {
+        display: none;
+      }
     }
 
     .phone {
@@ -130,7 +133,9 @@ header.branding {
         font-weight: 700;
         background: none;
       }
-
+      @include breakpoint(0 $tablet-breakpoint) {
+        display: none;
+      }
     }
   }
 

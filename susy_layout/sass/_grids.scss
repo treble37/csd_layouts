@@ -5,6 +5,6 @@
 @import "breakpoint";
 
 $susy: (
-  columns: 12,
+  columns: $total-columns,
   gutters: 1/4,
 );
